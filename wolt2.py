@@ -4,21 +4,23 @@ class Etel:
         self._nev = ""
         self._ar = 0
 
-    def get_ar(self):
+    @property
+    def ar(self):
         return self._ar
 
-    def set_ar(self, ar):
+    @ar.setter
+    def ar(self, ar):
         if ar < 0 or ar > 100000:
             print("Nem megfelelő ár!")
         else:
             self._ar = ar
 
-
-    def get_nev(self):
+    @property
+    def nev(self):
         return self._nev
 
-
-    def set_nev(self, ujnev):
+    @nev.setter
+    def nev(self, ujnev):
         self._nev = ujnev
 
 
@@ -35,7 +37,7 @@ class Restaurant:
         self.menuitems.append(other)
     def getmenuitems(self):
         for menuitem in self.menuitems:
-            print(f"{menuitem.get_nev()}................{menuitem.get_ar()} Ft")
+            print(f"{menuitem.nev}................{menuitem.ar} Ft")
 
 my_restaurant = Restaurant([],"Kisbojtár")
 my_restaurant.getmenuitems()
@@ -44,8 +46,8 @@ for i in range(2):
     etel_neve = input("Add meg az étel nevét: ")
     etel_ara = int(input("Add meg az étel árát: "))
     etel_uj = Etel()
-    etel_uj.set_nev(etel_neve)
-    etel_uj.set_ar(etel_ara)
+    etel_uj.nev = etel_neve
+    etel_uj.ar = etel_ara
     my_restaurant + etel_uj
 
 
