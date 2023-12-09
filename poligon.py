@@ -15,3 +15,4 @@ Poligon.color="kék"
 print(f"Ennek a poligonnak {my_triangle.sides} oldala van és a színe {my_triangle.color}.")
 
 print(f"My_poligon poligonnak {my_poligon.sides} oldala van és a színe {my_triangle.color}.")
+
