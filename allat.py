@@ -22,7 +22,8 @@ class Macska(Allat, Negylabu):
     faj = "makka"
 
     def __init__(self, nev, eletkor):
-        super().__init__(nev)
+        Allat.__init__(self,nev)
+        Negylabu.__init__(self,)
         self._eletkor = eletkor
     def nyivak(self):
         print("Nyiff!")
