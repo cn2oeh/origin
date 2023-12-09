@@ -11,5 +11,5 @@ print(f"Ennek a poligonnak {my_poligon.sides} oldala van és a színe {my_poligo
 my_triangle = Poligon(3)
 print(f"Ennek a poligonnak {my_triangle.sides} oldala van és a színe {my_triangle.color}.")
 
-my_triangle.color="kék"
-print(f"Ennek a poligonnak {my_triangle.sides} oldala van és a színe {my_triangle.color}.")
+Poligon.color="kék"
+print(f"My_poligon poligonnak {my_poligon.sides} oldala van és a színe {my_triangle.color}.")
