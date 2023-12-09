@@ -1,5 +1,6 @@
 class Poligon:
-    pass
+    def __init__(self):
+        print('This is a poligon')
 
 
 class Triangle:
@@ -7,11 +8,3 @@ class Triangle:
 
 
 my_poligon = Poligon()
-
-your_poligon = Poligon()
-
-print(my_poligon)
-print(id(my_poligon))
-
-print(your_poligon)
-print(id(your_poligon))
