@@ -1,9 +1,4 @@
-inputresult2 = input("Írj be egy szövget: ")
-
-print(inputresult2)
-print(type(inputresult2))
-
-inputresult = int(input('Írj be egy számot: '))
+inputresult = int(input("Írj be egy szövget: "))
 
 
 if not (isinstance(inputresult, int)):
