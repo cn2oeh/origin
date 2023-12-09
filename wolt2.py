@@ -5,7 +5,7 @@ class Etel:
         self._ar = 0
 
     @property
-    def ar(self):
+    def ar(self) -> int:
         return self._ar
 
     @ar.setter
@@ -16,7 +16,7 @@ class Etel:
             self._ar = ar
 
     @property
-    def nev(self):
+    def nev(self) -> str:
         return self._nev
 
     @nev.setter
@@ -25,7 +25,7 @@ class Etel:
 
 
 class Restaurant:
-    def __init__(self, menuitems, etteremnev):
+    def __init__(self, menuitems:[Etel], etteremnev: str):
         self.menuitems = menuitems
         self.etteremnev = etteremnev
 
